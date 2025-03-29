@@ -1,0 +1,272 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+.container {
+    padding: 0 32px;
+    margin: 32px auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu_icon {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+}
+
+main {
+    margin-bottom: 40px;
+}
+
+.main_info {
+    margin-top: 48px;
+}
+
+.intro_text {
+    display: flex;
+    letter-spacing: 2px;
+}
+
+.intro_text h1,
+.intro_text h2,
+.intro_text p {
+    font-size: 16px;
+    margin-left: 10px;
+    margin: 0;
+}
+
+.intro_text h1 {
+    position: relative;
+    margin-left: 16px;
+}
+
+.main_info h2 {
+    display: flex;
+}
+
+.main_info p:last-child {
+    font-size: 12px;
+    font-weight: 400;
+    color: #71717A;
+    line-height: 20px;
+}
+
+.developer_word {
+    margin: 1px 16px;
+    width: 147px;
+}
+
+.location_info span {
+    margin-left: 12px;
+}
+
+.bold_word {
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+.personal_links {
+    margin-top: 32px;
+}
+
+.personal_links ul {
+    display: flex;
+    gap: 10px;
+}
+
+.personal_links ul a {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+.skill_section .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.skill_section header,
+.experience_section header,
+.testimonial_section header {
+    text-align: center;
+}
+
+.skill_section header h2 {
+    font-weight: 400;
+}
+
+.skill {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.skill img {
+    margin-bottom: 20px;
+    width: 56px;
+}
+
+.skill span {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.experience_section {
+    background-color: black;
+    color: white;
+    padding-bottom: 10px;
+    padding: 40px 0;
+}
+
+.experience_section header {
+    margin-bottom: 20px;
+}
+
+.experience_section div {
+    color: #D4D4D8;
+}
+
+.experience_section div div {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #71717A;
+    border-radius: 10px;
+}
+
+.experience_section div div h4 span {
+    margin-right: 10px;
+}
+
+.gray_background {
+    background-color: #27272a;
+}
+
+.experience_des {
+    font-size: 11px;
+}
+
+.iti_logo {
+    color: red;
+}
+
+.about_section p,
+.testimonial_section p {
+    font-size: 13px;
+    color: #71717A;
+}
+
+.projects_section {
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+}
+
+.projects_section header {
+    text-align: center;
+}
+
+.project {
+    margin: 28px 0;
+}
+
+.project img {
+    border-radius: 20px;
+}
+
+.projects_section a img {
+    display: block;
+    width: 20px;
+}
+
+.read_container {
+    display: flex;
+    margin-top: 28px;
+}
+
+.card {
+    margin: 40px 0;
+    text-align: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card h4 {
+    position: relative;
+}
+
+.card h4::before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1px;
+    background-color: black;
+    margin: 15px auto;
+}
+
+.black_card h4::before {
+    background-color: white;
+}
+.card :last-child {
+    font-size: 15px;
+}
+
+.card_img {
+    width: 96px;
+}
+
+.black_card {
+    background-color: black;
+    color: white;
+}
+
+.black_card p {
+    color: white;
+}
