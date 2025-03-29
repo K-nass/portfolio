@@ -61,6 +61,9 @@ main {
     margin-top: 48px;
 }
 
+.main_info h2 {
+    font-weight: 900;
+}
 .intro_text {
     display: flex;
     letter-spacing: 2px;
@@ -70,12 +73,12 @@ main {
 .intro_text h2,
 .intro_text p {
     font-size: 16px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     margin: 0;
 }
 
 .intro_text h1 {
-    position: relative;
+    /* position: relative; */
     margin-left: 16px;
 }
 
@@ -253,6 +256,7 @@ main {
 .black_card h4::before {
     background-color: white;
 }
+
 .card :last-child {
     font-size: 15px;
 }
