@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     padding: 0;
@@ -436,7 +440,7 @@ input:focus {
 @media(min-width:768px) {
     .container {
         margin: 32px auto;
-        width: 720px;
+        max-width: 720px;
     }
 
     main {
@@ -571,7 +575,7 @@ input:focus {
 @media(min-width:992px) {
     .container {
         margin: 32px auto;
-        width: 960px;
+        max-width: 960px;
     }
 
     .experience_section .container {
@@ -582,7 +586,7 @@ input:focus {
 @media(min-width:1200px) {
     .container {
         margin: 32px auto;
-        width: 1140px;
+        max-width: 1140px;
     }
 
     .experience_section .container {
@@ -593,6 +597,6 @@ input:focus {
 @media(min-width:1400) {
     .container {
         margin: 32px auto;
-        width: 1320px;
+        max-width: 1320px;
     }
 }
