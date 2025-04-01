@@ -1,8 +1,11 @@
+html,
 body {
     padding: 0;
     margin: 0;
     font-family: "Inter", sans-serif;
     font-weight: 500;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .container {
@@ -20,6 +23,16 @@ a {
     color: black;
 }
 
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+header {
+    position: relative;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -31,12 +44,59 @@ nav {
     border: none;
 }
 
+#download_icon {
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#download_icon span {
+    font-weight: 900;
+    font-size: 16px;
+    padding: 0 3px;
+}
+
+#download_icon img {
+    width: 15px;
+    display: inline-block;
+}
+
 nav ul {
     padding: 0;
     margin: 0;
     display: none;
 }
 
+.show {
+    position: absolute;
+    display: block;
+    right: 30px;
+    top: 30px;
+    border-radius: 10px;
+    background-color: #E5E5E5;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.show a {
+    color: #333333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show a:hover {
+    background-color: #6C757D;
+}
+
+nav ul li {
+    padding: 5px;
+}
 
 img {
     display: block;
@@ -47,10 +107,16 @@ img {
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .logo {
     display: flex;
+    padding: 5px 10px;
+}
+
+.logo a {
+    margin-right: 10px;
 }
 
 main {
@@ -64,6 +130,7 @@ main {
 .main_info h2 {
     font-weight: 900;
 }
+
 .intro_text {
     display: flex;
     letter-spacing: 2px;
@@ -73,12 +140,10 @@ main {
 .intro_text h2,
 .intro_text p {
     font-size: 16px;
-    /* margin-left: 10px; */
     margin: 0;
 }
 
 .intro_text h1 {
-    /* position: relative; */
     margin-left: 16px;
 }
 
@@ -93,7 +158,7 @@ main {
     line-height: 20px;
 }
 
-.developer_word {
+.outlined_word {
     margin: 1px 16px;
     width: 147px;
 }
@@ -104,6 +169,13 @@ main {
 
 .bold_word {
     font-weight: 900;
+    margin-left: 16px;
+}
+
+.personal_into {
+    color: #71717A;
+    font-size: 13px;
+    line-height: 2;
 }
 
 .personal_links {
@@ -198,6 +270,10 @@ main {
     color: red;
 }
 
+.testimonial_section {
+    margin-bottom: 40px;
+}
+
 .about_section p,
 .testimonial_section p {
     font-size: 13px;
@@ -272,4 +348,251 @@ main {
 
 .black_card p {
     color: white;
+}
+
+.contact_section {
+    margin: 20px 0;
+}
+
+.contact_section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_section form input {
+    padding: 24px 0;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin: 20px 0;
+}
+
+.contact_section form input {
+    text-indent: 20px;
+}
+
+.contact_section .personal_links {
+    margin-bottom: 20px;
+}
+
+
+button[type="submit"] {
+    align-self: flex-start;
+    background-color: black;
+    padding: 12px 16px;
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact_section .container div:last-child {
+    margin-top: 40px;
+}
+
+.contact_section .container div:last-child h4 {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 12px 0;
+}
+
+.contact_section div:last-child p {
+    font-size: 11px;
+    line-height: 1.7;
+    color: #71717A;
+}
+
+.talk_word {
+    width: 55px;
+    display: inline;
+    margin: 0 12px;
+}
+
+.my_mail {
+    font-size: 16px !important;
+    color: black !important;
+    font-weight: 900;
+}
+
+footer {
+    padding: 5px 0;
+    background-color: black;
+}
+
+footer .container div p {
+    font-size: 10px;
+}
+
+footer .container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+@media(min-width:768px) {
+    .container {
+        margin: 32px auto;
+        width: 720px;
+    }
+
+    main {
+        margin-top: 60px;
+    }
+
+    .info_container {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .main_info {
+        width: 50%;
+    }
+
+    .banner {
+        transform: translateX(-30%);
+        width: 50%;
+        order: 2;
+    }
+
+    .banner img {
+        width: 600px;
+    }
+
+    .bold_word {
+        margin-left: 0;
+    }
+
+    .outlined_word {
+        margin: 1px 5px;
+    }
+
+    .location_info span {
+        margin-left: 0;
+    }
+
+    .intro_text h1 {
+        margin-left: 5px;
+    }
+
+    .skill_section .container {
+        grid-template-columns: auto auto auto;
+    }
+
+    .talk_word {
+        margin: 0;
+        width: 50px;
+    }
+
+    .experience_section .container {
+        width: 70%;
+    }
+
+    .about_section .container {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .about_info {
+        width: 50%;
+    }
+
+    .project {
+        display: flex;
+        gap: 30px;
+    }
+
+    .project_info .project_title {
+        font-size: 20px;
+        font-weight: 900;
+        color: white;
+    }
+
+    .project_banner img {
+        width: 300px;
+    }
+
+    .reverse_order {
+        order: 2;
+    }
+
+    .project_info p {
+        color: #71717A;
+        font-size: 11px;
+    }
+
+    .card_container {
+        display: flex;
+        gap: 20px;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .contact_section .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .form_container {
+        width: 45%;
+    }
+
+    .contact_info {
+        width: 45%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0 5px;
+    }
+
+    #menu_icon {
+        display: none;
+    }
+
+    #download_icon {
+        display: block;
+    }
+}
+
+
+@media(min-width:992px) {
+    .container {
+        margin: 32px auto;
+        width: 960px;
+    }
+
+    .experience_section .container {
+        width: 80%;
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        margin: 32px auto;
+        width: 1140px;
+    }
+
+    .experience_section .container {
+        max-width: 1068px;
+    }
+}
+
+@media(min-width:1400) {
+    .container {
+        margin: 32px auto;
+        width: 1320px;
+    }
 }
