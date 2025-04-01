@@ -48,25 +48,10 @@ nav {
     border: none;
 }
 
-#download_icon {
-    color: white;
-    background-color: black;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
+.download_icon_sm {
+    display: block;
 }
 
-#download_icon span {
-    font-weight: 900;
-    font-size: 16px;
-    padding: 0 3px;
-}
-
-#download_icon img {
-    width: 15px;
-    display: inline-block;
-}
 
 nav ul {
     padding: 0;
@@ -437,6 +422,21 @@ input:focus {
     outline: none;
 }
 
+.download_icon_md  {
+    display: none;
+}
+
+.download_icon_sm span {
+    font-size: 16px;
+    padding: 0 3px;
+}
+
+.download_icon_sm img {
+    width: 15px;
+    display: inline-block;
+    color: red;
+}
+
 @media(min-width:768px) {
     .container {
         margin: 32px auto;
@@ -566,8 +566,55 @@ input:focus {
         display: none;
     }
 
-    #download_icon {
+    .download_icon_sm{
         display: block;
+    }
+
+    #scroll_btn {
+        position: fixed;
+        display: none;
+        right: 30px;
+        bottom: 40px;
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    #scroll_btn:hover {
+        background-color: white;
+        color: black;
+        border-color: black;
+    }
+
+    #scroll_btn i {
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .download_icon_md {
+        color: white;
+        background-color: black;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+    }
+
+    .download_icon_md span {
+        font-weight: 900;
+        font-size: 16px;
+        padding: 0 3px;
+    }
+
+    .download_icon_md img {
+        width: 15px;
+        display: inline-block;
+    }
+
+    .download_icon_sm {
+        display: none;
     }
 }
 
