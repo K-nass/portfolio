@@ -29,7 +29,7 @@ To use this dropdown menu functionality, clone the repository or simply download
 
     Clone the repository:
 
-    git clone https://github.com/your-username/dropdown-menu-project.git
+    git clone https://github.com/K_nass/portfolio.git
 
     Open the index.html file in your browser to view the menu in action.
 
