@@ -437,6 +437,30 @@ input:focus {
     color: red;
 }
 
+#scroll_btn {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 40px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#scroll_btn:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+#scroll_btn i {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
 @media(min-width:768px) {
     .container {
         margin: 32px auto;
@@ -568,29 +592,6 @@ input:focus {
 
     .download_icon_sm{
         display: block;
-    }
-
-    #scroll_btn {
-        position: fixed;
-        display: none;
-        right: 30px;
-        bottom: 40px;
-        background-color: black;
-        color: white;
-        border: 1px solid white;
-        padding: 10px;
-        border-radius: 5px;
-    }
-
-    #scroll_btn:hover {
-        background-color: white;
-        color: black;
-        border-color: black;
-    }
-
-    #scroll_btn i {
-        font-size: 30px;
-        font-weight: 900;
     }
 
     .download_icon_md {
