@@ -422,7 +422,7 @@ input:focus {
     outline: none;
 }
 
-.download_icon_md  {
+.download_icon_md {
     display: none;
 }
 
@@ -590,7 +590,7 @@ input:focus {
         display: none;
     }
 
-    .download_icon_sm{
+    .download_icon_sm {
         display: block;
     }
 
